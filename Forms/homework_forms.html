@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>homework.forms</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		label, legend {
+			padding: 10px;
+			font-size: 25px;
+		}
+		button {
+			padding: 10px;
+			font-size: 25px;
+		}
+		input {
+			padding: 10px;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		
+	</header>
+	<main>
+		<form action="http: // localhost: 3000 / form " method="get">
+			<fieldset>
+				<legend>Заполните форму</legend>
+					<div>
+						<label for="name">Имя:</label>
+						<input name="name" type="text" placeholder="Сидоров Иван Иванович" id="name">
+					</div>
+					<div>
+						<label for="age">Возраст:</label>
+						<input name="age" type="number" min="18" placeholder="Сколько вам лет?" id="age">
+					</div>
+					<div>
+						<label for="email">Электронная почта:</label>
+						<input name="email" type="email" placeholder="ivansidorov@gmail.com">
+					</div>
+					<div>
+						<label for="tel">Ваш номер телефона:</label>
+						<input name="tel" type="tel" placeholder="0631010101">
+					</div>
+					<div>
+						<label for="agree">Подтвердить</label>
+						<input type="checkbox" id="agree" required>
+					</div>
+					<button>Отправить</button>
+			</fieldset>
+		</form>
+	</main>
+
+</body>
+</html>
